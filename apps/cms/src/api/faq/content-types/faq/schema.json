@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faqs",
+  "info": {
+    "singularName": "faq",
+    "pluralName": "faqs",
+    "displayName": "Faq"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "answer": {
+      "type": "text",
+      "required": true
+    },
+    "tag": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "question",
+        "user",
+        "gift",
+        "wallet",
+        "headset",
+        "chat",
+        "shield",
+        "box",
+        "gear",
+        "factory",
+        "flask",
+        "chip"
+      ],
+      "default": "question"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "onContactPage": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

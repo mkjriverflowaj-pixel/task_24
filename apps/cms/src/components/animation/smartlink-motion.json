@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_animation_smartlink_motions",
+  "info": {
+    "displayName": "Smart Link page motion"
+  },
+  "options": {},
+  "attributes": {
+    "heroStory": {
+      "type": "boolean",
+      "default": true
+    },
+    "heroTilt": {
+      "type": "boolean",
+      "default": true
+    },
+    "qrEffect": {
+      "type": "boolean",
+      "default": true
+    },
+    "qrSeconds": {
+      "type": "decimal",
+      "default": 5.3,
+      "min": 2,
+      "max": 20
+    },
+    "heroLottie": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "files"
+      ]
+    }
+  }
+}

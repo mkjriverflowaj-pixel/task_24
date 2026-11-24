@@ -1,0 +1,136 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_page",
+  "info": {
+    "singularName": "about-page",
+    "pluralName": "about-pages",
+    "displayName": "About Page"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "intro": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "rangeTitle": {
+      "type": "string"
+    },
+    "rangeSubtitle": {
+      "type": "string"
+    },
+    "certificationsTitle": {
+      "type": "string"
+    },
+    "certificationsText": {
+      "type": "text"
+    },
+    "certifications": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.certification"
+    },
+    "valuesTitle": {
+      "type": "string"
+    },
+    "values": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.feature"
+    },
+    "rangeItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.range-item"
+    },
+    "certificationsClosing": {
+      "type": "text"
+    },
+    "valuesIntro": {
+      "type": "text"
+    },
+    "valuesImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "certificationsSubtitle": {
+      "type": "string"
+    },
+    "journeyEyebrow": {
+      "type": "string"
+    },
+    "journeyTitle": {
+      "type": "string"
+    },
+    "journeySubtitle": {
+      "type": "text"
+    },
+    "journey": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.milestone"
+    },
+    "capabilitiesEyebrow": {
+      "type": "string"
+    },
+    "capabilitiesTitle": {
+      "type": "string"
+    },
+    "capabilitiesText": {
+      "type": "text"
+    },
+    "capabilities": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.capability"
+    },
+    "leadersEyebrow": {
+      "type": "string"
+    },
+    "leadersTitle": {
+      "type": "string"
+    },
+    "leadersText": {
+      "type": "text"
+    },
+    "leaders": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.leader"
+    },
+    "valuesSlides": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.showcase-slide"
+    },
+    "valuesEyebrow": {
+      "type": "string"
+    },
+    "valueItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.value-item"
+    },
+    "valuesCtaLabel": {
+      "type": "string"
+    },
+    "valuesCtaUrl": {
+      "type": "string"
+    }
+  }
+}

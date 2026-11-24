@@ -1,0 +1,114 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_page",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categoriesTitle": {
+      "type": "string"
+    },
+    "categoriesSubtitle": {
+      "type": "string"
+    },
+    "highlights": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.feature"
+    },
+    "ctaTitle": {
+      "type": "string"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLabel": {
+      "type": "string"
+    },
+    "categoriesEyebrow": {
+      "type": "string"
+    },
+    "promoTitle": {
+      "type": "string"
+    },
+    "promoSubtitle": {
+      "type": "string"
+    },
+    "promoLabel": {
+      "type": "string"
+    },
+    "promoImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "whyEyebrow": {
+      "type": "string"
+    },
+    "whyTitle": {
+      "type": "string"
+    },
+    "whyItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.feature"
+    },
+    "bannerTitle": {
+      "type": "string"
+    },
+    "bannerText": {
+      "type": "string"
+    },
+    "bannerLabel": {
+      "type": "string"
+    },
+    "ctaEyebrow": {
+      "type": "string"
+    },
+    "helpImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "helpImageBack": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "spacesEyebrow": {
+      "type": "string"
+    },
+    "spacesTitle": {
+      "type": "string"
+    },
+    "spacesSubtitle": {
+      "type": "text"
+    },
+    "spaces": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.space-card"
+    },
+    "orbitEyebrow": {
+      "type": "string"
+    },
+    "orbitTitle": {
+      "type": "string"
+    },
+    "orbitHint": {
+      "type": "string"
+    }
+  }
+}

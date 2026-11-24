@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_animation_about_motions",
+  "info": {
+    "displayName": "About page motion"
+  },
+  "options": {},
+  "attributes": {
+    "valuesAutoplay": {
+      "type": "boolean",
+      "default": true
+    },
+    "valuesSeconds": {
+      "type": "decimal",
+      "default": 4,
+      "min": 1.5,
+      "max": 30
+    },
+    "productSliderAutoplay": {
+      "type": "boolean",
+      "default": true
+    },
+    "productSliderSeconds": {
+      "type": "decimal",
+      "default": 3.8,
+      "min": 1.5,
+      "max": 30
+    }
+  }
+}

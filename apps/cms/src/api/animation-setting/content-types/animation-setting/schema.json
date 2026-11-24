@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "animation_setting",
+  "info": {
+    "singularName": "animation-setting",
+    "pluralName": "animation-settings",
+    "displayName": "Animation Settings"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "allAnimations": {
+      "type": "boolean",
+      "default": true
+    },
+    "home": {
+      "type": "component",
+      "repeatable": false,
+      "component": "animation.home-motion"
+    },
+    "about": {
+      "type": "component",
+      "repeatable": false,
+      "component": "animation.about-motion"
+    },
+    "smartLink": {
+      "type": "component",
+      "repeatable": false,
+      "component": "animation.smartlink-motion"
+    }
+  }
+}

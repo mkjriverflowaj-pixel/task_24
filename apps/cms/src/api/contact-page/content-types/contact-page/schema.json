@@ -1,0 +1,62 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_page",
+  "info": {
+    "singularName": "contact-page",
+    "pluralName": "contact-pages",
+    "displayName": "Contact Page"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "sectionTitle": {
+      "type": "string"
+    },
+    "sectionSubtitle": {
+      "type": "string"
+    },
+    "helpTitle": {
+      "type": "string"
+    },
+    "helpText": {
+      "type": "text"
+    },
+    "helpLabel": {
+      "type": "string"
+    },
+    "mapTitle": {
+      "type": "string"
+    },
+    "mapCoordinates": {
+      "type": "string"
+    },
+    "faqEyebrow": {
+      "type": "string"
+    },
+    "faqTitle": {
+      "type": "string"
+    },
+    "faqSubtitle": {
+      "type": "text"
+    }
+  }
+}

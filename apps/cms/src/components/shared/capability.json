@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_shared_capabilities",
+  "info": {
+    "displayName": "Capability"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "enumeration",
+      "enum": ["factory", "shield", "box", "gear", "flask", "chip", "headset", "user"],
+      "default": "factory"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "bullets": {
+      "type": "text"
+    }
+  }
+}

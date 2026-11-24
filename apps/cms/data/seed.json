@@ -1,0 +1,377 @@
+{
+  "siteSetting": {
+    "siteName": "Safonix India",
+    "tagline": "Premium Electrical Products & Solutions",
+    "phone": "+91-9119333209",
+    "email": "contactus@safonixindia.com",
+    "officeHours": "Mon- Sat: 10:00 AM - 7:00 PM",
+    "facebookUrl": "https://www.facebook.com/",
+    "addresses": [
+      {
+        "label": "Jaipur Office",
+        "text": "103/74, Meera Marg, Ward Number 43, Sector 101, Mansarovar, Jaipur, Rajasthan, 302020."
+      },
+      {
+        "label": "Vasai Unit",
+        "text": "Gala No. 109/A, Blue Bell Industrial Estate, KT Industrial Park, Vasai (E), Palghar-401208."
+      }
+    ],
+    "stats": [
+      {
+        "value": 25,
+        "suffix": "+",
+        "label": "Years in Industry.",
+        "unit": "years"
+      },
+      {
+        "value": 500,
+        "suffix": "+",
+        "label": "Products Available.",
+        "unit": "Products"
+      },
+      {
+        "value": 1,
+        "suffix": "L+",
+        "label": "Trusted Homes.",
+        "unit": "Households"
+      }
+    ],
+    "instagramUrl": "https://www.instagram.com/",
+    "xUrl": "https://x.com/"
+  },
+  "homePage": {
+    "categoriesTitle": "Explore Our **Categories**",
+    "categoriesSubtitle": "Switches, wires, lighting, protection and ventilation for modern living spaces.",
+    "highlights": [
+      {
+        "title": "Certified Quality Assurance",
+        "description": "Premium quality guaranteed."
+      },
+      {
+        "title": "Eco-Friendly Solutions",
+        "description": "Sustainable and secure."
+      },
+      {
+        "title": "Support",
+        "description": "Mon- Sat: 10:00 AM - 7:00 PM"
+      },
+      {
+        "title": "Seamless Warranty",
+        "description": "Hassle-free coverage."
+      }
+    ],
+    "ctaTitle": "Need help choosing the right **product?**",
+    "ctaText": "Our team is here to assist you with expert advice and personalized recommendations.",
+    "ctaLabel": "Get in Touch",
+    "heroSlides": [
+      {
+        "eyebrow": "INNOVATIVE ELECTRICAL SOLUTIONS",
+        "heading": "Delivering style, safety, and **innovation**",
+        "subheading": "Redefining design and functionality of electricals!",
+        "buttonLabel": "Explore Our Products",
+        "buttonUrl": "/products",
+        "theme": "red"
+      },
+      {
+        "eyebrow": "SMART RANGE",
+        "heading": "Introducing **Smart Range** of Switches!",
+        "buttonLabel": "Explore Switches",
+        "buttonUrl": "/products/modular-switches",
+        "theme": "black"
+      }
+    ],
+    "categoriesEyebrow": "OUR PRODUCTS",
+    "promoTitle": "Smart Choice for **Modern Living**",
+    "promoSubtitle": "Stylish. Safe. Sustainable.",
+    "promoLabel": "Explore Products",
+    "whyEyebrow": "WHY CHOOSE SAFONIX",
+    "whyTitle": "Built for **Better**",
+    "whyItems": [
+      {
+        "title": "Premium Quality",
+        "description": "High-quality products you can trust."
+      },
+      {
+        "title": "Innovative Designs",
+        "description": "Modern solutions for modern spaces"
+      },
+      {
+        "title": "Energy Saving",
+        "description": "Efficient products for a sustainable future"
+      },
+      {
+        "title": "Dedicated Support",
+        "description": "Always here to help"
+      }
+    ],
+    "bannerTitle": "Powering a Brighter Tomorrow",
+    "bannerText": "With Safonix’s innovative electrical solutions",
+    "bannerLabel": "Contact Us",
+    "ctaEyebrow": "NEED HELP?"
+  },
+  "aboutPage": {
+    "heading": "Redefining Quality & Excellence **Since 2016**",
+    "intro": "At **SAFONIX INDUSTRIES**, quality is our utmost priority. We are a name synonymous with excellence in the electrical products industry, delivering solutions that meet the highest industry standards. Our wide range of electrical goods caters to diverse needs and applications, ensuring safety, durability, and performance.\n\nFounded in 2016, **SAFONIX INDIA** emerged from a vision to redefine quality in the electrical industry, backed by our founder’s experience of serving this industry since 1998. Over the years, we have built a strong reputation for our commitment to excellence and customer satisfaction, becoming a trusted name for homes and businesses across India.",
+    "rangeTitle": "Our Extensive **Product Range**",
+    "rangeSubtitle": "Our products reflect a commitment to both functionality and design",
+    "certificationsTitle": "Quality Assurance **You Can Trust**",
+    "certificationsText": "This dedication ensures our products are not only safe and reliable but also energy-efficient, giving our customers peace of mind for all their electrical needs.",
+    "certifications": [
+      {
+        "name": "ISI",
+        "fullName": "Indian Standard Institute"
+      },
+      {
+        "name": "ISO",
+        "fullName": "International Organization for Standardization"
+      },
+      {
+        "name": "BIS",
+        "fullName": "Bureau of Indian Standards"
+      },
+      {
+        "name": "BEE",
+        "fullName": "Bureau of Energy Efficiency"
+      }
+    ],
+    "valuesTitle": "Our **Values**",
+    "values": [
+      {
+        "title": "Proudly made in India",
+        "description": "At Safonix India, we are committed to supporting local industries and promoting the 'Make in India' initiative. By choosing our products, you contribute to the growth of our nation and experience solutions designed to meet Indian standards of quality and reliability."
+      },
+      {
+        "title": "Our promise",
+        "description": "With a proven legacy, we continue to innovate and provide electrical products that stand the test of time. Safonix is proud to be your trusted partner for quality-driven electrical solutions."
+      }
+    ],
+    "rangeItems": [
+      {
+        "label": "LED Lighting"
+      },
+      {
+        "label": "Ventilation & Fresh Air Fans"
+      },
+      {
+        "label": "MCBs & Distribution Boards"
+      },
+      {
+        "label": "Modular Switches"
+      },
+      {
+        "label": "Wires & Cables"
+      }
+    ],
+    "certificationsClosing": "Discover Safonix – your partner in electrifying elegance and innovative security for every corner of your abode and workspace.",
+    "valuesIntro": "At Safonix India, we are committed to supporting local industries and promoting the ‘Make in India’ initiative.",
+    "certificationsSubtitle": "Delivering safety, reliability & efficiency"
+  },
+  "categories": [
+    {
+      "name": "Modular Switches",
+      "tagline": "Sleek designs with advanced technology for modern living spaces.",
+      "children": [
+        {
+          "name": "Matris Modular Series",
+          "tagline": "Elegant switches designed for style, safety, and seamless performance."
+        },
+        {
+          "name": "Xtreme Modular Series",
+          "tagline": "Elegant switches designed for style, safety, and seamless performance."
+        }
+      ]
+    },
+    {
+      "name": "LED Lighting",
+      "tagline": "Energy-efficient lighting solutions for a brighter, greener future.",
+      "children": [
+        {
+          "name": "LED Bulbs"
+        },
+        {
+          "name": "High Wattage LED Bulbs"
+        },
+        {
+          "name": "Downlights",
+          "tagline": "Stylish and efficient lighting for premium home and office setups."
+        },
+        {
+          "name": "T5 LED Tubelights"
+        },
+        {
+          "name": "Flood Lights and Street Lights",
+          "tagline": "Robust outdoor lighting for safety and energy savings in large spaces."
+        }
+      ]
+    },
+    {
+      "name": "Wire & Cables",
+      "tagline": "Durable, FR and eco-friendly wires for long-lasting electrical solutions.",
+      "children": [
+        {
+          "name": "Multistrand Wires"
+        },
+        {
+          "name": "Multicore Copper Flexible Wires"
+        }
+      ]
+    },
+    {
+      "name": "MCBs & DBs",
+      "tagline": "Reliable circuit protection for enhanced safety and power management.",
+      "children": [
+        {
+          "name": "MCB's & Isolators",
+          "tagline": "Reliable circuit protection for enhanced safety and power management."
+        },
+        {
+          "name": "ELCB"
+        },
+        {
+          "name": "Zenia Distribution Boards",
+          "tagline": "Organized and efficient solutions for your electrical distribution needs."
+        },
+        {
+          "name": "Matris Distribution Boards",
+          "tagline": "Organized and efficient solutions for your electrical distribution needs."
+        }
+      ]
+    },
+    {
+      "name": "Fresh Air & Ventilation Fans",
+      "tagline": "Powerful ventilation solutions for cleaner and healthier spaces.",
+      "children": [
+        {
+          "name": "Fresh Air Fans 12\""
+        },
+        {
+          "name": "Ventilation Fans 8\""
+        }
+      ]
+    },
+    {
+      "name": "Fans",
+      "tagline": "High-performance fans for fresh and comfortable ventilation.",
+      "children": [
+        {
+          "name": "BLDC Fans"
+        }
+      ]
+    },
+    {
+      "name": "Accessories",
+      "tagline": "",
+      "children": [
+        {
+          "name": "Extension Cords & Door Bells"
+        },
+        {
+          "name": "Holder & Ceiling Rose"
+        },
+        {
+          "name": "Modular Gang Boxes"
+        },
+        {
+          "name": "Plugs Tops"
+        },
+        {
+          "name": "Surface Boxes"
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How do I register?",
+      "answer": "Registration is easy! Just download the app and follow the instructions for account creation. You'll need your email, phone number, and a unique code provided by your distributor or dealer."
+    },
+    {
+      "question": "How do I earn rewards?",
+      "answer": "Rewards are earned by scanning QR codes on product packaging, completing purchases, and meeting sales targets."
+    },
+    {
+      "question": "How do I redeem my points?",
+      "answer": "Points can be redeemed through the \"Wallet\" section of the app. Simply click \"Redeem Now\" and follow the instructions."
+    },
+    {
+      "question": "Contact Us",
+      "answer": "If you can't find the answer you're looking for in our FAQs, please reach out to us at contactus@safonixindia.com."
+    },
+    {
+      "question": "Feedback",
+      "answer": "We value your feedback and suggestions. Please let us know how we can improve the Safonix app by sending us a message at contactus@safonixindia.com."
+    }
+  ],
+  "legalPages": [
+    {
+      "title": "Privacy Policy",
+      "slug": "privacy-policy",
+      "content": "Introduction\n\nWelcome to Safonix Smart Link! (Safonix Industries). Your privacy is important to us. This Privacy Policy outlines how Safonix Smart Link collects, uses, and protects your personal information when you download or use the app. By using the app, you agree to the practices described in this policy.\n\n1. Information We Collect  \n\nPersonal Information: When you create an account on Safonix Smart Link, we may collect personal details such as your name, email address, and phone number.\nApp Usage Data: We collect information about your interactions with the app, including the features you use, the rewards you earn, and any purchases or sales you complete.\nDevice Information: We may collect details about the device you use to access the app, including your device’s unique identifier, IP address, operating system, and browser type.\n\n2. How We Use Your Information  \n\nTo Operate the App: Your personal information is used to create and manage your account, provide you with services, and enable rewards functionality.\nTo Improve User Experience: We use app usage data to understand how users interact with the app, helping us improve its functionality and design.\nTo Communicate With You: We may use your email address or phone number to send you important updates, notifications, or respond to your inquiries.\n\n3. Sharing Your Information\n\nSafonix Smart Link (Safonix Industries) does not sell or rent your personal information to third parties. However, we may share your data with trusted partners who help us operate the app, as long as they agree to keep your information confidential.\n\n4. Data Security\n\nWe are committed to ensuring your personal information is secure. We use encryption and other security measures to protect your data from unauthorized access or disclosure. However, no method of transmission over the internet is 100% secure.\n\n5. Your Rights\n\nYou have the right to access, update, or delete your personal information at any time. To request changes or deletions, please contact us at contactus@safonixindia.com.\n\n6. Changes to the App\n\nWe reserve the right to modify or update features of the app at any time. If significant changes to the way we collect or use your data occur, we will notify you through in-app notifications or email.\n\n7. Third-Party Links\n\nThe Safonix Smart Link app may contain links to third-party websites or services. We are not responsible for the privacy practices of these external sites. We encourage you to review the privacy policies of any third-party platforms you interact with.\n\n8. Data Retention\n\nWe retain your personal information for as long as necessary to provide you with our services, comply with legal obligations, or resolve disputes.\n\n9. Governing Law\n\nThis Privacy Policy is governed by the laws of India. By using the app, you agree to the jurisdiction of the courts in Jaipur (India) for any legal matters related to this Privacy Policy.\n\n10. Changes to This Policy\n\nSafonix Smart Link (Safonix Industries) reserves the right to update this Privacy Policy at any time. Continued use of the app after changes are posted constitutes your acceptance of the updated policy.\n\n11. Contact Us\n\nIf you have any questions or concerns about this Privacy Policy, feel free to contact us at contactus@safonixindia.com.\n\n Facebook\n\n Copyright © 2024 Safonix. All Rights Reserved.\n\n Website Design By Nextdynamix  Tech (OPC) Pvt. Ltd."
+    },
+    {
+      "title": "Terms and conditions",
+      "slug": "terms-and-conditions",
+      "content": "### Introduction\n\nWelcome to Safonix! By downloading or using the Safonix app, you agree to be bound by the following Terms and Conditions. Please read them carefully.\n\n### 1. Use of the App\n\n- **Eligibility** : You must be at least 18 years old or have parental consent to use this app.\n- **Account Responsibility** : You are responsible for maintaining the confidentiality of your login details and all activities that occur under your account.\n- **Prohibited Uses**: You agree not to use the app for any unlawful or prohibited activities, such as exploiting rewards, tampering with QR codes, or attempting unauthorized access.\n\n### 2. Rewards System\n\n- **Earning Points** : Rewards are earned by participating in specific actions such as scanning QR codes, completing purchases, or achieving sales goals.\n- **Redeeming Points** : Points can be redeemed through the app’s wallet feature, subject to our terms and conditions of redemption.\n- **Fraud**: Any fraudulent activity will result in the immediate suspension of your account and forfeiture of all earned rewards.\n\n### 3. Intellectual Property\n\n- All content, including images, text, and software, is the property of Safonix Smart Link (Safonix Industries) or its licensors. You may not reproduce, modify, or distribute any content from the app without prior written consent.\n\n### 4. Modifications to the App\n\n- We reserve the right to update or change features of the app at any time. We will notify users of significant changes through in-app notifications.\n\n### 5. Termination of Account\n\n- Safonix Smart Link (Safonix Industries) reserves the right to suspend or terminate your account for violation of these Terms and Conditions or any illegal activity.\n\n### 6. Limitation of Liability\n\n- Safonix Smart Link (Safonix Industries) is not liable for any direct, indirect, incidental, or consequential damages that arise from the use or inability to use the app.\n\n### 7. Governing Law\n\n- These Terms and Conditions are governed by the laws of India.\n\n### 8. Changes to the Terms\n\n- Safonix Smart Link (Safonix Industries) reserves the right to modify these Terms and Conditions at any time. Continued use of the app after changes are posted constitutes your acceptance of the new terms.\n\n### 9. Contact Us\n\nIf you have any questions about these Terms, please contact us at **contactus@safonixindia.com.**"
+    },
+    {
+      "title": "Cookies Policy",
+      "slug": "cookies-policy",
+      "content": "Cookie Policy for Safonix India \n\nThis is the Cookie Policy for Safonix India, accessible from https://safonixindia.com/ \n\nWhat Are Cookies \n\nAs is common practice with almost all professional websites, this site uses cookies, which are tiny files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we use it, and why we sometimes need to store these cookies. We will also share how you can prevent these cookies from being stored; however, this may downgrade or &#8216;break' certain elements of the site's functionality. \n\nHow We Use Cookies \n\nWe use cookies for a variety of reasons detailed below. Unfortunately, in most cases, there are no industry standard options for disabling cookies without completely disabling the functionality and features they add to this site. It is recommended that you leave on all cookies if you are not sure whether you need them or not, in case they are used to provide a service you use. \n\nDisabling Cookies \n\nYou can prevent the setting of cookies by adjusting the settings on your browser (see your browser Help for how to do this). Be aware that disabling cookies will affect the functionality of this and many other websites that you visit. Disabling cookies will usually result in also disabling certain functionality and features of this site. Therefore it is recommended that you do not disable cookies. \n\nThe Cookies We Set \n\nAccount related cookies \n\nIf you create an account with us, we will use cookies for the management of the signup process and general administration. These cookies will usually be deleted when you log out; however, in some cases, they may remain afterward to remember your site preferences when logged out. \n\nLogin related cookies \n\nWe use cookies when you are logged in so we can remember this fact. This prevents you from having to log in every single time you visit a new page. These cookies are typically removed or cleared when you log out to ensure that you can only access restricted features and areas when logged in. \n\nEmail newsletters-related cookies \n\nThis site offers newsletter or email subscription services & cookies may be used to remember if you are already registered and whether to show certain notifications which might only be valid to subscribe/unsubscribed users. \n\nOrders processing related cookies \n\nThis site offers e-commerce or payment facilities &some cookies are essential to ensure that your order is remembered between pages so we can process it properly. \n\nSurveys related cookies \n\nFrom time to time, we offer user surveys and questionnaires to provide you with interesting insights, helpful tools or to understand our user base more accurately. These surveys may use cookies to remember who has already taken part in a survey or provide you with accurate results after you change pages. \n\nForms related cookies \n\nWhen you submit data through a form such as those found on contact pages or comment forms, cookies may be set to remember your user details for future correspondence. \n\nSite preferences cookies \n\nIn order to provide you with a great experience on this site, we provide the functionality to set your preferences for how this site runs when you use it. In order to remember your preferences, we need to set cookies so that this information can be called whenever you interact with a page that is affected by your preferences. \n\nThird-Party Cookies \n\nIn some special cases, we also use cookies provided by trusted third parties. Following are the section details on which third-party cookies you might encounter through this site. \n\nFrom time to time, we test new features and make subtle changes to the way the site is delivered. When we are still testing new features, these cookies may be used to ensure that you receive a consistent experience. Whereas on the site, we understand which optimizations our users appreciate the most. \n\nMore Information \n\nHopefully, that has clarified things for you & as was previously mentioned, if there is something you aren't sure you need or not, it's usually safer to leave cookies enabled in case, it does interact with one of the features you use on our site. \n\nFor more general information on cookies, please read the Cookies Policy article. \n\nHowever, if you are still looking for more information, then you can contact us through one of our preferred contact methods: \n\nEmail: contactus@safonixindia.com\n\n Facebook\n\n Copyright © 2024 Safonix. All Rights Reserved.\n\n Website Design By Nextdynamix  Tech (OPC) Pvt. Ltd."
+    }
+  ],
+  "testimonials": [
+    {
+      "title": "Exceptional Variety & Unmatched Quality",
+      "quote": "We've been sourcing electricals from Safonix India for years, and their range is simply unbeatable. Whether it's switches, sockets, led lights or wiring solutions, they have everything we need with the highest quality standards. Highly recommended.",
+      "name": "Sumit Sharma",
+      "company": "SK Electricals - Jaipur"
+    },
+    {
+      "title": "A Name We Trust for 15 Years",
+      "quote": "From day one, we’ve received premium electricals at fair prices. Their commitment to quality and customer satisfaction keeps us choosing their better work. Safonix India offers fair pricing, great quality – the perfect combination.",
+      "name": "Avinash Kevlani",
+      "company": "Jai Electricals - Bharatpur"
+    },
+    {
+      "title": "Energy-Efficient & Long-Lasting",
+      "quote": "Electricals from Safonix India have transformed our workspace! Not only do they provide excellent quality products in electricals, but they are also energy-efficient. Highly recommended! The quality is far superior to other brands I've used.",
+      "name": "Swapnil Gang",
+      "company": "Vikas Light Home - Udaipur"
+    },
+    {
+      "title": "Exceptional Service and Professionalism",
+      "quote": "Safonix India delivers outstanding solutions with unmatched expertise. Their team’s dedication and attention to detail ensure top-notch results. Trust Safonix for reliable, efficient, and professional service—exceeding expectations every time.",
+      "name": "Vijay Jindal",
+      "company": "Jindal Electricals - Hindaun"
+    },
+    {
+      "title": "Timely Delivery and Superior Quality",
+      "quote": "In our line of work, quality and timely delivery are crucial. Safonix India has consistently provided top-notch electrical products on schedule. Their attention to detail and commitment to excellence make them a trusted partner.",
+      "name": "Deepak Sharma",
+      "company": "Gaytri sales - Jaipur"
+    },
+    {
+      "title": "Reliable & High-Quality Service",
+      "quote": "Safonix India delivers reliable & high-quality service you can trust! With expert solutions, premium products, and unmatched durability, we power your needs efficiently. Experience excellence with Safonix—where every connection counts.",
+      "name": "Sunil Kumar",
+      "company": "Shree Ram Hardwares & Electricals - Sikar"
+    }
+  ],
+  "contactPage": {
+    "eyebrow": "GET IN TOUCH",
+    "title": "Contact Us",
+    "subtitle": "Need help choosing the right product? Reach out to us and discover how we can help!",
+    "sectionTitle": "How Can We Help You Today?",
+    "sectionSubtitle": "Reach us by phone or email, or visit one of our offices.",
+    "helpTitle": "Get in touch with us!",
+    "helpText": "Our team is here to assist you with expert advice and personalized recommendations.",
+    "helpLabel": "Explore Products",
+    "mapTitle": "Our Location",
+    "mapCoordinates": "26.850377,75.7676396"
+  },
+  "productsPage": {
+    "eyebrow": "OUR PRODUCTS",
+    "title": "Our Products",
+    "subtitle": "Quality electrical products built to Indian standards."
+  }
+}

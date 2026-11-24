@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_showcase_slides",
+  "info": {
+    "displayName": "Showcase Slide"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

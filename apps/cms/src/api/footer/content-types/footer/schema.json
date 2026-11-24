@@ -1,0 +1,65 @@
+{
+  "kind": "singleType",
+  "collectionName": "footer",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "quickLinksTitle": {
+      "type": "string"
+    },
+    "quickLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    },
+    "usefulLinksTitle": {
+      "type": "string"
+    },
+    "usefulLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    },
+    "showLegalPages": {
+      "type": "boolean",
+      "default": true
+    },
+    "followTitle": {
+      "type": "string"
+    },
+    "contactTitle": {
+      "type": "string"
+    },
+    "copyrightName": {
+      "type": "string"
+    },
+    "copyrightUrl": {
+      "type": "string"
+    },
+    "copyrightSuffix": {
+      "type": "string"
+    },
+    "creditLabel": {
+      "type": "string"
+    },
+    "creditName": {
+      "type": "string"
+    },
+    "creditUrl": {
+      "type": "string"
+    },
+    "creditSuffix": {
+      "type": "string"
+    }
+  }
+}

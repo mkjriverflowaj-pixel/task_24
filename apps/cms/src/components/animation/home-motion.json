@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_animation_home_motions",
+  "info": {
+    "displayName": "Home page motion"
+  },
+  "options": {},
+  "attributes": {
+    "orbitAutoplay": {
+      "type": "boolean",
+      "default": true
+    },
+    "orbitSeconds": {
+      "type": "decimal",
+      "default": 4,
+      "min": 1.5,
+      "max": 30
+    },
+    "orbitTurnSeconds": {
+      "type": "decimal",
+      "default": 2.3,
+      "min": 0.6,
+      "max": 6
+    },
+    "heroSliderAutoplay": {
+      "type": "boolean",
+      "default": true
+    },
+    "heroSliderSeconds": {
+      "type": "decimal",
+      "default": 4,
+      "min": 2,
+      "max": 30
+    },
+    "marqueeSeconds": {
+      "type": "decimal",
+      "default": 22,
+      "min": 5,
+      "max": 120
+    },
+    "testimonialsSeconds": {
+      "type": "decimal",
+      "default": 60,
+      "min": 10,
+      "max": 240
+    },
+    "clickSparks": {
+      "type": "boolean",
+      "default": true
+    },
+    "preloader": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
