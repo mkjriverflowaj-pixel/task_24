@@ -1,0 +1,14 @@
+# Docker builds from the repo root. Send only what the website image needs (the CMS has its own context, apps/cms).
+**
+!package.json
+!package-lock.json
+!.npmrc
+!apps/web
+!apps/backend/package.json
+
+**/node_modules
+**/.next
+**/.env
+**/.env.*
+!**/.env.example
+**/*.tsbuildinfo

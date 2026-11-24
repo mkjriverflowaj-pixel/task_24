@@ -231,7 +231,8 @@ export type LegalPage = { documentId: string; title: string; slug: string; conte
 
 export function mediaUrl(media?: Media | null): string | null {
   if (!media?.url) return null;
-  return media.url.startsWith('http') ? media.url : `${BASE}${media.url}`;
+  // Media links are opened by the visitor's browser, so they use the public address.
+  return media.url.startsWith('http') ? media.url : `${process.env.STRAPI_PUBLIC_URL ?? BASE}${media.url}`;
 }
 
 async function request<T>(path: string, query: Record<string, string> = {}): Promise<T> {

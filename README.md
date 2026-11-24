@@ -1,13 +1,38 @@
 # Safonix
 
-Website for Safonix India. It is a monorepo with two apps:
+Website for Safonix India. It is a monorepo (npm workspaces + Turborepo) with three apps:
 
 | App | Folder | What it is |
 |---|---|---|
 | Web | `apps/web` | Public website (Next.js 16, React 19, Tailwind 4, TypeScript) |
-| CMS | `apps/cms` | Content management (Strapi 5, PostgreSQL) |
+| CMS | `apps/cms` | Page content (Strapi 5, PostgreSQL) |
+| Backend | `apps/backend` | Commerce (Medusa v2): products, cart, orders, shopper accounts, admin |
 
-The website holds no content of its own. Every page (home, about, products, FAQs, legal pages, contact details, offices) is fetched from Strapi over HTTP. Content edited in Strapi appears on the site within about 60 seconds (`revalidate: 60` in `apps/web/src/lib/strapi.ts`).
+The website gets its page content (home, about, FAQs, legal pages, contact details, offices) from Strapi over HTTP, and its products, cart, orders and accounts from Medusa. Content edited in Strapi appears on the site within about 60 seconds (`revalidate: 60` in `apps/web/src/lib/strapi.ts`).
+
+## Monorepo
+
+- `apps/web` and `apps/backend` are npm workspaces and share one install at the repo root. `apps/cms` (Strapi) has its own install, because its admin needs React 18 while the website and Medusa use React 19.
+- Install everything: `npm run install:all`. Run: `npm run dev` (website and Medusa through Turborepo) and `npm run cms:dev` (Strapi). Per app: `web:dev`, `backend:dev`, `cms:dev`.
+- Node 22.23.4 (`.nvmrc`). `.npmrc` keeps `save-exact` (new packages are saved with an exact version; add `--no-save-exact` for a normal `^` range) and `engine-strict`.
+- Exact versions are used for the packages that must match each other (Next.js, React, Strapi, `@medusajs/*`); everything else uses `^` ranges, and the lockfiles fix what is installed.
+
+## Docker
+
+`docker-compose.yml` (repo root) runs the database, the CMS and the website. Medusa still runs on this computer (`npm run backend:dev`); the containers reach it through `host.docker.internal`.
+
+```bash
+cp .env.example .env     # then set MEDUSA_PUBLISHABLE_KEY and POSTGRES_PASSWORD (same password as apps/cms/.env)
+docker compose up -d --build postgres cms     # database + Strapi, http://localhost:1337/admin
+docker compose up -d --build web              # website, http://localhost:3000
+docker compose down                           # stop (data stays)
+```
+
+- **Database:** one PostgreSQL server (`safonix-postgres`, port 5433 on this computer) holds `safonix` (Strapi) and `safonix_commerce` (Medusa). Its data is in the Docker volume `safonix_pgdata`, which survives rebuilds. Never run `docker compose down -v`: it deletes the volume.
+- **CMS content:** the database plus the pictures in `apps/cms/public/uploads`, which is mounted into the container.
+- **CMS settings:** the container reads secrets from `apps/cms/.env` and only overrides the database host and port.
+- **Website build:** the pages are generated while the image is built, so Strapi and Medusa must be running when you run `docker compose build web`. Rebuild the website image after changing the website code.
+- In Docker the website serves pictures straight from Strapi and Medusa (`NEXT_IMAGE_UNOPTIMIZED=true`), because the container cannot reach their browser-facing addresses.
 
 ## Requirements
 
@@ -53,22 +78,21 @@ npx strapi export
 
 ### 3. Web
 
-```bash
-cd apps/web
-npm install
-```
+The website's packages are installed from the repo root (`npm install`, or `npm run install:all`).
 
-Create `apps/web/.env.local`:
+Create `apps/web/.env.local` (see `apps/web/.env.example`):
 
 ```
 STRAPI_URL=http://localhost:1337
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
+MEDUSA_URL=http://localhost:9000
+MEDUSA_PUBLISHABLE_KEY=pk_...        # printed by `npm run seed` in apps/backend
 ```
 
-Then:
+Then, from the repo root:
 
 ```bash
-npm run dev      # http://localhost:3000
+npm run web:dev      # http://localhost:3000
 ```
 
 Strapi must be running before the website, otherwise pages that are not already cached will fail to load.

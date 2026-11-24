@@ -1,0 +1,80 @@
+# Run the project in Docker. Values come from the root .env (copy .env.example).
+#
+#   docker compose up -d --build postgres cms     the database and the CMS,   http://localhost:1337/admin
+#   docker compose up -d --build web              the website,                http://localhost:3000
+#
+# Medusa (the commerce backend) still runs on this computer; the website reaches it, and Strapi too, through
+# host.docker.internal.
+
+name: safonix
+
+x-web-env: &web-env
+  # How the website's server reaches the backends (from inside the container).
+  STRAPI_URL: ${WEB_STRAPI_URL:-http://host.docker.internal:1337}
+  MEDUSA_URL: ${WEB_MEDUSA_URL:-http://host.docker.internal:9000}
+  # How the visitor's browser reaches Strapi's media.
+  STRAPI_PUBLIC_URL: ${STRAPI_PUBLIC_URL:-http://localhost:1337}
+  NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-http://localhost:3000}
+  # The "Safonix Storefront" publishable key from Medusa (a public key).
+  MEDUSA_PUBLISHABLE_KEY: ${MEDUSA_PUBLISHABLE_KEY:?Set MEDUSA_PUBLISHABLE_KEY in the root .env}
+  NEXT_IMAGE_UNOPTIMIZED: ${NEXT_IMAGE_UNOPTIMIZED:-true}
+
+services:
+  # One PostgreSQL server, two databases: safonix (Strapi) and safonix_commerce (Medusa).
+  # The data lives in the Docker volume safonix_pgdata, so it survives container rebuilds.
+  postgres:
+    image: postgres:17
+    container_name: safonix-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-safonix_app}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in the root .env}
+      POSTGRES_DB: safonix
+    ports:
+      - '127.0.0.1:5433:5432'
+    volumes:
+      - safonix_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U $${POSTGRES_USER} -d safonix']
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+  cms:
+    image: safonix-cms
+    build:
+      context: apps/cms
+    restart: unless-stopped
+    # Secrets and settings come from apps/cms/.env; only what differs inside Docker is set here.
+    env_file: apps/cms/.env
+    environment:
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      PORT: 1337
+      DATABASE_HOST: postgres
+      DATABASE_PORT: 5432
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - '1337:1337'
+    volumes:
+      # Uploaded pictures (the CMS content that is not in the database).
+      - ./apps/cms/public/uploads:/app/public/uploads
+
+  web:
+    image: safonix-web
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+      args: *web-env
+    restart: unless-stopped
+    environment: *web-env
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    ports:
+      - '3000:3000'
+
+volumes:
+  safonix_pgdata:
+    external: true

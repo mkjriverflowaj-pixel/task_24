@@ -1,0 +1,27 @@
+{
+  "name": "safonix",
+  "private": true,
+  "description": "Safonix India: website (Next.js), CMS (Strapi) and commerce backend (Medusa).",
+  "packageManager": "npm@10.9.9",
+  "engines": {
+    "node": ">=22.23.4 <23",
+    "npm": ">=10.9.0"
+  },
+  "workspaces": [
+    "apps/web",
+    "apps/backend"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm install --prefix apps/cms",
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "web:dev": "turbo dev --filter=@safonix/web",
+    "backend:dev": "turbo dev --filter=@safonix/backend",
+    "cms:dev": "npm run develop --prefix apps/cms",
+    "cms:build": "npm run build --prefix apps/cms"
+  },
+  "devDependencies": {
+    "turbo": "2.11.13"
+  }
+}

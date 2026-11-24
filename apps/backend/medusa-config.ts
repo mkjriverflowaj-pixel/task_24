@@ -41,6 +41,8 @@ module.exports = defineConfig({
         ],
       },
     },
+    // Store-wide switches editable in the admin (src/modules/store-settings).
+    { resolve: './src/modules/store-settings' },
     // With Redis available, use it for events and workflows (required for production, optional in dev).
     ...(redisUrl
       ? [

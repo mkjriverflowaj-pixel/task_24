@@ -8,6 +8,17 @@ build/
 coverage/
 .turbo/
 .expo/
+.medusa/
+.strapi/
+.tmp/
+*.tsbuildinfo
+
+# Large media kept out of git: Strapi uploads and Medusa product pictures (restore from a Strapi export / the product import)
+apps/cms/public/uploads/*
+!apps/cms/public/uploads/.gitkeep
+apps/backend/static/
+apps/backend/uploads/*
+!apps/backend/uploads/.gitkeep
 
 .env
 .env.*
@@ -17,3 +28,6 @@ coverage/
 .DS_Store
 Thumbs.db
 
+
+# Local backups (database dumps, old manifests)
+backups/

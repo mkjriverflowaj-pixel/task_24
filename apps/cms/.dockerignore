@@ -1,0 +1,11 @@
+node_modules
+dist
+build
+.cache
+.tmp
+.env
+.env.*
+!.env.example
+*.log
+# Uploaded media is mounted into the container, not baked into the image
+public/uploads
